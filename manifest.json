@@ -1,8 +1,9 @@
 {
     "name": "Lionel AI Growth Agent",
-    "short_name": "Lionel AI",
+    "short_name": "AI Agent",
     "description": "Assistant IA pour créateurs de contenu",
-    "start_url": "/",
+    "start_url": "./",
+    "scope": "./",
     "display": "standalone",
     "background_color": "#080814",
     "theme_color": "#080814",
