@@ -1,0 +1,17 @@
+{
+    "name": "Lionel AI Agent",
+    "short_name": "AI Agent",
+    "description": "Assistant IA pour créateurs de contenu",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#080814",
+    "theme_color": "#080814",
+    "icons": [
+        {
+            "src": "app_icon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

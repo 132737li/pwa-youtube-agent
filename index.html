@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Lionel AI Agent</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="app_icon.png">
+    <meta name="theme-color" content="#080814">
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #080814; }
+        iframe { width: 100%; height: 100%; border: none; }
+    </style>
+</head>
+<body>
+    <!-- Le lien vers ton application Streamlit -->
+    <iframe src="https://leoncorazon-ai-26.streamlit.app/?embed=true&show_footer=false"></iframe>
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("sw.js");
+        }
+    </script>
+</body>
+</html>
