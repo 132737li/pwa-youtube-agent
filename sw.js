@@ -1,4 +1,19 @@
-// Service Worker minimal pour autoriser l'installation PWA
+// Service Worker minimal pour valider l'installabilité PWA
+const CACHE_NAME = 'ai-agent-cache-v1';
+
+self.addEventListener('install', function(event) {
+    self.skipWaiting();
+});
+
+self.addEventListener('activate', function(event) {
+    event.waitUntil(self.clients.claim());
+});
+
+// Gestionnaire fetch requis par Chrome Android
 self.addEventListener('fetch', function(event) {
-    // On laisse le navigateur gérer les requêtes normalement
+    event.respondWith(
+        fetch(event.request).catch(function() {
+            return caches.match(event.request);
+        })
+    );
 });
